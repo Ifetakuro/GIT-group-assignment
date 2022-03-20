@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.navbar{
+  border-radius: 20px;
+}
+
+
+#nav-color a{
+  color: #1F2D5F;
+}
+
+
+#hero-section {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #1f2d5f;
+  background-size: cover;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.text img{
+  margin-bottom: 12px;
+}
+
+h3 {
+  color: #1F2D5F;
+  font-size: 2rem;
+}
+
+.input-box {
+  width: 70%;
+  height: 50px;
+}
+
+#message {
+  width: 70%;
+  height: 80px;
+  padding: 10px;
+}
+
+#message, .input-box {
+  margin-bottom: 20px;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+
+}
+
+
+.my-btn{
+  margin-left: 40%;
+  border-radius: 10px;
+  border: 0;
+  background-color: #1F2D5F;
+}
+
+.form-field * {
+  vertical-align: top;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+.middle-box {
+  /* margin: -131px auto 300px auto; */
+  height: 250px;
+  width: 576px;
+  background-color: #455077;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.red-box {
+  height: 75px;
+  width: 92px;
+  background-color: #a00000e2;
+  border-radius: 8px;
+  position: relative;
+  left: 510px;
+  bottom: 25px;
+}
+
+
+.footer-list{
+  list-style-type: none;
+  color: white;
+}
+
+i{
+  margin-left: 20px;
+}
+
+.data-info {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.data {
+  margin: 15px 35px;
+  /* padding: 35px; */
+  width: 30%;
+}
+
+.data h2 {
+  color: #143AC1;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.parag-1 {
+  color: red;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.parag-2 {
+  color: #747171;  
+}
+
+
+@media screen and (max-width: 990px) {
+  #hero-section {
+    height: 100vh;
+  }
+
+  .sec-2 {
+    margin-top: 200px;
+  }
+  
+  .red-image {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .doc-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
