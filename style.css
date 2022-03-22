@@ -11,11 +11,14 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
+  height: 100%;
 }
 
 .navbar{
   border-radius: 20px;
+  z-index: 10;
 }
 
 
@@ -74,13 +77,6 @@ h3 {
   vertical-align: top;
 }
 
-.text {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-
 .middle-box {
   /* margin: -131px auto 300px auto; */
   height: 250px;
@@ -112,23 +108,10 @@ i{
 
 .data-info {
   font-family: 'Noto Sans', sans-serif;
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
+  width: 75%;
   background-color: white;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  text-align: center;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.data {
-  margin: 15px 35px;
-  /* padding: 35px; */
-  width: 30%;
 }
 
 .data h2 {
@@ -149,26 +132,23 @@ i{
 
 
 @media screen and (max-width: 990px) {
-  #hero-section {
-    height: 100vh;
-  }
-
   .sec-2 {
-    margin-top: 200px;
+    margin-top: 150px;
   }
   
   .red-image {
     margin-bottom: 100px;
   }
-}
-@media screen and (max-width: 768px) {
-  .doc-sec {
+
+  .navbar-nav {
     display: flex;
     flex-direction: column;
   }
-  .contact-div {
-    display: flex;
-    flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 768px) {
+   .data-info {
+    width: 100%;
   }
 
 }
